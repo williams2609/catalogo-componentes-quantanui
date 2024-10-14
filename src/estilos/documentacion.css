@@ -1,0 +1,109 @@
+.doc {
+    padding: 20px;
+    margin: 0 0 0 270px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doc-header {
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .doc-header h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    color: #ffffff;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #d8d6d6;
+  }
+  
+  pre {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    text-align: start;
+  }
+  
+  code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  ul li strong {
+    color: #fff;
+  }
+  
+  .doc-footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #777;
+  }
+  .doc{
+    position: relative;
+    z-index: 5;
+  }
+
+  
+  .code-container {
+    position: relative; /* Necesario para el posicionamiento absoluto del botón */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.contenedor-c {
+    position: absolute; /* Permite que el botón se posicione en relación a su contenedor */
+    top: 10px; /* Distancia desde la parte superior */
+    right: 10px; /* Distancia desde la derecha */
+    background-color: #adafb127; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    padding: 5px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Efecto de transición para el color de fondo */
+}.contenedor-c:hover {
+    background-color: #195f5c; /* Cambia el color al pasar el mouse */
+}
+.code-container:hover .contenedor-c {
+    display: block; /* Muestra el botón cuando se pasa el mouse sobre el contenedor de código */
+  }
+  
+  /* Asegúrate de que el botón esté oculto por defecto */
+  .contenedor-c {
+    display: none; /* Ocultar el botón por defecto */
+  }
+  @media (max-width: 800px){
+    .doc {
+        margin: 0 0 0 0;
+    }
+  }
+  @media (min-width: 1024px) {
+    .doc {
+        margin: 0 0 0 270px;
+    }
+}

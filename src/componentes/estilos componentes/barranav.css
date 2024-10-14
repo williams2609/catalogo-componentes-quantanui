@@ -1,0 +1,24 @@
+.doc-header .navbar{
+background-color: #f2f3f2;
+}
+.doc-header .navbar-nav{
+   
+    width: 100%;
+}.doc-header .dropdown-menu{
+    border: 0;
+}.doc-header .navbar-collapse .show{
+    width: 100%;
+    flex-direction: column;
+    
+}.navbar-collapse .show .navbar-nav{
+    flex-direction: column;
+
+}
+.navbar-toggler{
+    right: 0;
+}.doc-header .show .navbar-nav {
+
+    display: flex;
+    flex-direction: column; /* Asegura que los links estén en columna */
+    width: 100%;
+  }

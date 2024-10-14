@@ -1,0 +1,108 @@
+.sidebar {
+    position: fixed; /* Fijo a la izquierda */
+    top: 70px; /* Deja espacio para el navbar */
+    left: 0; /* Pegado al lado izquierdo */
+    width: 250px; /* Ancho del sidebar */
+    background-color: rgba(15, 15, 15, 0.205); /* Fondo con opacidad */
+    padding: 15px 0 15px 0; /* Espaciado interno */
+    height: calc(100vh - 60px); /* Altura completa menos la altura del navbar */
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+    z-index: 11;
+    border-right: 2px solid rgb(17, 17, 17);
+
+}.me-auto{
+    width: 220px;
+}
+
+  
+  .sidebar div {
+    color: rgb(76, 198, 202);
+    margin-top: 0; /* Elimina el margen superior */
+    text-align: start;
+  }
+  
+  .sidebar ul {
+
+    list-style-type: none; /* Elimina viñetas */
+    padding: 0; /* Elimina el padding */
+  }
+  
+  .sidebar li {
+    margin: 10px 0; /* Espaciado entre los elementos */
+    list-style: none;
+   margin-left: 20px;
+  }
+  
+  .sidebar a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Elimina subrayado */
+  }
+  
+  .sidebar a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+  }
+.dropdown{
+    position: relative;
+    max-width: 100%;
+  
+}
+.sidebar .dropdown-menu{
+
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    left: 0;
+    text-align: center;
+    justify-content: center;
+    text-align: start;
+}
+.sidebar .navbar-nav .nav-item{
+    width: 100%;
+   text-align: end;
+}
+@media (max-width: 800px) {
+  .sidebar {
+    transform: translateX(-100%); /* Ocultar el sidebar por defecto */
+    background-image: url('https://images.unsplash.com/photo-1579547944064-0180251f94c8?q=80&w=1278&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: 400% 400%;
+    animation: gradient 5s ease forwards; /* Animación suave del fondo */
+    text-align: center;
+}
+
+  .sidebar.open {
+    transform: translateX(0); /* Mostrar el sidebar cuando esté abierto */
+  }
+
+  .sidebar-toggle {
+    display: block; /* Mostrar el botón solo en pantallas pequeñas */
+  }
+}
+.boton-sidebar{
+    background-color: rgba(173, 173, 192, 0);
+    position: fixed;
+    left: 10px;
+    top: 0;
+    z-index: 20;
+    margin-top: 80px;
+    border-radius: 5px;
+    width: 30px;
+}.boton-sidebar .bi-list{
+    color: black;
+    font-size: 20px;
+}
+.open{
+    border: 1px solid black;
+    background-color: rgba(212, 209, 209, 0.151);
+}
+.boton-sidebar .closed{
+   position: absolute;
+   left: 196px;
+}
+@media(min-width: 800px){
+    .boton-sidebar{
+        display: none;
+    }
+}
