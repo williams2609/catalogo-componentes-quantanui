@@ -22,3 +22,9 @@ background-color: #f2f3f2;
     flex-direction: column; /* Asegura que los links estén en columna */
     width: 100%;
   }
+  .doc-header h3{
+    margin:30px 0 30px 0;
+  }
+  li{
+    list-style: none;
+  }

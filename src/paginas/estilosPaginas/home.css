@@ -1,0 +1,6 @@
+.explore-button{
+    background-color: rgb(87, 0, 185);
+}
+.explore-button:hover{
+    background-color: blueviolet;
+}

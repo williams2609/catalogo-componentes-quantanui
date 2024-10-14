@@ -12,8 +12,9 @@ const BarraNavegacion = () => {
           <CustomNav className="me-auto">
               <NavLink href="/">Home</NavLink>
               <NavLink href="/doc/documentacion/how-to-use">Documentacion</NavLink>
-          </CustomNav>
-      
+              </CustomNav>
+          <NavLink href="https://github.com/williams2609/catalogo-componentes-quantanui"><i class="bi bi-github"></i></NavLink>
+         
   </Navbar>
   
   </div>

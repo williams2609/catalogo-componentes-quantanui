@@ -4,7 +4,14 @@ import Home from '../paginas/Home';
 import Documentacion from '../paginas/documentacion'
 import Whyuse from '../paginas/Whyuse';
 import SideBar from './SideBar';
-import  Navbar  from './BarraNav';
+import  Navbar  from './SeccionComponentes/BarraNav';
+import Personalizar from '../paginas/Personalizar';
+import Colaboracion from '../paginas/Colaboracion';
+import BackgroundGd from '../ClasesDeUtilidades/BackgroundGd';
+import BgColor from '../ClasesDeUtilidades/BgColor';
+import Flexbox from '../ClasesDeUtilidades/Flexbox';
+import Tablas from '../ClasesDeUtilidades/Tablas';
+import Responsive from '../ClasesDeUtilidades/Responsive';
 function MainConten() {
     const location = useLocation();
 
@@ -19,6 +26,16 @@ function MainConten() {
         <Route path='/doc/documentacion/how-to-use' element={<Documentacion />} />
         <Route path='/doc/documentacion/why-use' element={<Whyuse />} />
         <Route path='/doc/componentes/navbar' element={<Navbar />} />
+        <Route path='/doc/documentacion/personalizacion' element={<Personalizar />} />
+        <Route path='/doc/Colaboracion/Colaborar' element={<Colaboracion />} />
+        <Route path='/doc/clases/backgroundGd' element={<BackgroundGd />} />
+        <Route path='/doc/clases/bgColor' element={<BgColor />} />
+        <Route path='/doc/clases/flexBox' element={<Flexbox />} />
+        <Route path='/doc/clases/tablas' element={<Tablas />} />
+        <Route path='/doc/clases/tablas' element={<Tablas />} />
+        <Route path='/doc/clases/responsive' element={<Responsive />} />
+
+        
       </Routes>
     </div>
   );

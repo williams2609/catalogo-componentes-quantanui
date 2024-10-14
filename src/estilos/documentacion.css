@@ -20,7 +20,12 @@
   section {
     margin-bottom: 40px;
   }
-  
+  strong{
+    color: #54c2e4;
+  }
+  h3{
+    color: #54c2e4;
+  }
   h2 {
     color: #ffffff;
     font-size: 1.8em;
@@ -34,7 +39,7 @@
   }
   
   pre {
-    background-color: #1e1e1e;
+    background-color: #141414;
     color: #dcdcdc;
     padding: 15px;
     border-radius: 8px;

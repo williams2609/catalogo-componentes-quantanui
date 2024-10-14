@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import NavHome from '../componentes/NavHome';
+import './estilosPaginas/home.css'
 
 function Home() {
     const navigate = useNavigate()
@@ -15,8 +15,8 @@ function Home() {
     <p>Explora nuestros componentes reutilizables y mejora tu desarrollo.</p>
     <div className="button-container">
       
-      <button className="explore-button btn btn-primary" onClick={handleDocumentationClick} >Documentación</button>
-      <button className="view-components-button btn btn-secondary">Ver Información de Componentes</button>
+      <button className="explore-button btn btn-primary pts" onClick={handleDocumentationClick} >Documentación</button>
+      <button className="view-components-button btn btn-primary"onClick={()=>navigate('/doc/componentes/navbar')}>Componentes</button>
     
     </div>
   </header>

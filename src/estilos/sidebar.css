@@ -8,7 +8,7 @@
     height: calc(100vh - 60px); /* Altura completa menos la altura del navbar */
     overflow-y: auto; /* Habilita el desplazamiento vertical */
     z-index: 11;
-    border-right: 2px solid rgb(17, 17, 17);
+    border-right: 2px solid rgb(54, 53, 53);
 
 }.me-auto{
     width: 220px;
@@ -95,7 +95,7 @@
 }
 .open{
     border: 1px solid black;
-    background-color: rgba(212, 209, 209, 0.151);
+    background-color: rgba(212, 209, 209, 0);
 }
 .boton-sidebar .closed{
    position: absolute;

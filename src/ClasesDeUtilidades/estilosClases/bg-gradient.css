@@ -1,0 +1,51 @@
+.color-table {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid #ddd; /* Borde suave */
+  }
+  
+  .table-row {
+    display: contents;
+  }
+  
+  .table-cell {
+    background-color: #fafafa; /* Fondo más claro */
+    padding: 16px; /* Más espacio interno */
+    border-bottom: 1px solid #e0e0e0; /* Separación entre filas */
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    word-break: break-word;
+    color: #333; /* Color del texto más oscuro */
+  }
+  
+  .table-cell:first-child {
+    border-left: none; /* Eliminar borde del primer elemento */
+  }
+  
+  .table-cell:last-child {
+    border-right: none; /* Eliminar borde del último elemento */
+  }
+  
+  .table-row:last-of-type .table-cell {
+    border-bottom: none; /* Eliminar borde en la última fila */
+  }
+  
+  .table-cell strong {
+    color: #2c3e50; /* Color más oscuro para resaltar */
+  }
+  
+  .table-cell:nth-child(3) {
+    color: #2980b9; /* Color azul para los valores de los colores hexadecimales */
+  }
+  
+  .table-cell:hover {
+    background-color: #f0f0f0; /* Cambio de color al pasar el ratón */
+    transition: background-color 0.3s ease; /* Transición suave */
+  }

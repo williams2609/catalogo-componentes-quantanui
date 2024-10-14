@@ -1,15 +1,15 @@
 import React from 'react'
-import CopyButton from './CopyButton'
+import CopyButton from '../CopyButton'
 import { NavDropdown, NavLink,Navbar,CustomNav } from 'quantanui'
-import './estilos componentes/barranav.css'
+import '../estilos componentes/barranav.css'
 
 function BarraNav() {
   return (
     <div className='doc'>
       <section className="doc-header">
         <h2>Uso del Componente Navbar</h2>
-        <p>A continuación, se muestra cómo puedes utilizar el componente <strong>Navbar</strong> en tu aplicación:</p>
-        
+        <p>A continuación, se muestra Varios Componentes Navbar <strong>Navbar</strong> en tu aplicación:</p>
+        <h3>Navbar Fondo Blanco</h3>
         <Navbar expand="lg" className="bg-tertiary">
                 <Navbar.Brand href="#home">QuantanUi</Navbar.Brand>
                 <Navbar.Toggle />
@@ -57,10 +57,7 @@ function App() {
     );
 }`}
         </CopyButton>
-        
-        <h3>Ejemplo Visual</h3>
-        <p>Este es un ejemplo de cómo se vería el componente <strong>Navbar</strong> en tu aplicación:</p>
-        
+  
         <div className="navbar-demo">
           
         </div>
