@@ -36,9 +36,9 @@ function Dropdown() {
                 Dropdown
               </button>
               <div className="dropdown-menu">
-                <a className="dropdown-item" href="#">Opción 1</a>
-                <a className="dropdown-item" href="#">Opción 2</a>
-                <a className="dropdown-item" href="#">Opción 3</a>
+                <a className="dropdown-item" >Opción 1</a>
+                <a className="dropdown-item" >Opción 2</a>
+                <a className="dropdown-item" >Opción 3</a>
               </div>
             </div>
           </div>
@@ -65,8 +65,8 @@ function Dropdown() {
           </div>
           <div className="table-cell">
             <div className="dropdown-menu">
-              <a className="dropdown-item" href="#">Opción 1</a>
-              <a className="dropdown-item" href="#">Opción 2</a>
+              <a className="dropdown-item" >Opción 1</a>
+              <a className="dropdown-item" >Opción 2</a>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ function Dropdown() {
             <code>{`<a class="dropdown-item" href="#">Opción</a>`}</code>
           </div>
           <div className="table-cell">
-            <a className="dropdown-item" href="#">Opción 1</a>
+            <a className="dropdown-item" >Opción 1</a>
           </div>
         </div>
       </div>
