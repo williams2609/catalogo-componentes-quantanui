@@ -24,6 +24,15 @@ import Alert from '../ClasesDeUtilidades/Alert';
 import Tooltops from '../ClasesDeUtilidades/Tooltops';
 import FormControl from '../ClasesDeUtilidades/FormControl';
 import ValidacionForm from '../ClasesDeUtilidades/ValidacionForm';
+import Grillas from '../ClasesDeUtilidades/Grillas';
+import FormsLabels from '../ClasesDeUtilidades/FormsLabels';
+import Carousel from '../ClasesDeUtilidades/Carousel';
+import Accodion from '../ClasesDeUtilidades/Accodion';
+import ImagenesyVideos from '../ClasesDeUtilidades/ImagenesyVideos';
+import BreadCrums from '../ClasesDeUtilidades/BreadCrums';
+import ToastNotifications from '../ClasesDeUtilidades/ToastNotifications';
+import TemasFondo from '../ClasesDeUtilidades/TemasFondo';
+import Dropdown from '../ClasesDeUtilidades/Dropdown'
 function MainConten() {
     const location = useLocation();
 
@@ -58,6 +67,15 @@ function MainConten() {
         <Route path='/doc/clases/tooltips' element={<Tooltops />} />
         <Route path='/doc/clases/form' element={<FormControl />} />
         <Route path='/doc/clases/validacionForm' element={<ValidacionForm />} />
+        <Route path='/doc/clases/grillas' element={<Grillas />} />
+        <Route path='/doc/clases/texto-labels-form' element={<FormsLabels />} />
+        <Route path='/doc/clases/carrousel' element={<Carousel />} />
+        <Route path='/doc/clases/acordion' element={<Accodion />} />
+        <Route path='/doc/clases/img-y-videos' element={<ImagenesyVideos />} />
+        <Route path='/doc/clases/breadCrums' element={<BreadCrums />} />
+        <Route path='/doc/clases/notificaciones' element={<ToastNotifications />} />
+        <Route path='/doc/clases/temas-fondo' element={<TemasFondo />} />
+        <Route path='/doc/clases/DropDown' element={<Dropdown />} />
 
 
 

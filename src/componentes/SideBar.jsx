@@ -43,7 +43,16 @@ const handleButton =()=>{
                 <NavLink href="/doc/clases/tooltips">Tooltips</NavLink>
                 <NavLink href="/doc/clases/form">Form Controls</NavLink>
                 <NavLink href="/doc/clases/validacionForm">Validacion Formulario</NavLink>
-
+                <NavLink href="/doc/clases/texto-labels-form">Texto y Etiquetas Formularios</NavLink>
+                <NavLink href="/doc/clases/grillas">Sistema de Grillas</NavLink>
+                <NavLink href="/doc/clases/carrousel">Carrousel</NavLink>
+                <NavLink href="/doc/clases/acordion">Accordión</NavLink>
+                <NavLink href="/doc/clases/img-y-videos">Imagenes y Videos</NavLink>
+                <NavLink href="/doc/clases/breadCrums">BreadCrumbs</NavLink>
+                <NavLink href="/doc/clases/notificaciones">Notificaciones</NavLink>
+                <NavLink href="/doc/clases/temas-fondo">Temas de Fondo</NavLink>
+                <NavLink href="/doc/clases/Dropdown">Dropdown</NavLink>
+                <NavLink href="/doc/clases/Dropdown">Dropdown</NavLink>
               
             </NavDropdown>
         </aside>
