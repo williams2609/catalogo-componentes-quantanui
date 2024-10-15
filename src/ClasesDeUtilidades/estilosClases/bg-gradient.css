@@ -49,3 +49,178 @@
     background-color: #f0f0f0; /* Cambio de color al pasar el ratón */
     transition: background-color 0.3s ease; /* Transición suave */
   }
+  .fondo-table {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid #ddd; /* Borde suave */
+  }
+  .fade {
+    opacity: 1; /* Estado visible por defecto */
+    transition: opacity 0.5s ease-in-out; /* Transición de opacidad */
+}
+
+.fade:hover {
+    opacity: 0; /* Totalmente invisible al pasar el mouse */
+}
+
+/* Animaciones de deslizamiento */
+.slide-in {
+    transform: translateX(0); /* Posición final (a la posición original) */
+    transition: transform 0.5s ease-in-out; /* Transición de desplazamiento */
+}
+
+.slide-in:hover {
+    transform: translateX(-100%); /* Desplazado hacia la izquierda al pasar el mouse */
+}
+
+/* Desplazamiento vertical */
+.slide-in-up {
+    transform: translateY(0); /* Posición final */
+    transition: transform 0.5s ease-in-out; /* Transición de desplazamiento */
+}
+
+.slide-in-up:hover {
+    transform: translateY(-100%); /* Desplazado hacia arriba al pasar el mouse */
+}
+
+.slide-in-down {
+    transform: translateY(0); /* Posición final */
+    transition: transform 0.5s ease-in-out; /* Transición de desplazamiento */
+}
+
+.slide-in-down:hover {
+    transform: translateY(100%); /* Desplazado hacia abajo al pasar el mouse */
+}
+
+/* Animaciones de zoom */
+.zoom-in {
+    transform: scale(1); /* Escala original */
+    transition: transform 0.5s ease-in-out; /* Transición de escala */
+}
+
+.zoom-in:hover {
+    transform: scale(2); /* Escala a 0 al pasar el mouse */
+}
+
+/* Animaciones de rotación */
+.rotate-in {
+    transform: rotate(0deg); /* Sin rotación */
+    transition: transform 0.5s ease-in-out; /* Transición de rotación */
+}
+
+.rotate-out {
+    transform: rotate(360deg); /* Rotación completa */
+    transition: transform 0.5s ease-in-out; /* Transición de rotación */
+}
+
+.rotate:hover {
+    animation: rotate 0.5s ease-in-out; /* Aplicar animación al hacer hover */
+}
+
+/* Animaciones de rebote */
+.bounce-in {
+    animation: bounceIn 0.5s forwards,bounceIn 0s forwards; /* Animación de rebote hacia dentro */
+}
+
+.bounce-in:hover {
+    animation: bounceOut 0.5s forwards; /* Animación de rebote hacia fuera al pasar el mouse */
+}
+
+/* Definición de keyframes para rebote */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3); /* Comienza pequeño */
+        opacity: 0; /* Invisible al inicio */
+    }
+    50% {
+        opacity: 1; /* Visible a la mitad */
+        transform: scale(1.05); /* Ligeramente más grande */
+    }
+    100% {
+        transform: scale(1); /* Tamaño final */
+    }
+}
+
+@keyframes bounceOut {
+    0% {
+        opacity: 1; /* Totalmente visible */
+    }
+    50% {
+        transform: scale(1.05); /* Ligeramente más grande */
+    }
+    100% {
+        transform: scale(0.3); /* Muy pequeño al final */
+        opacity: 0; /* Invisible al final */
+    }
+}
+
+/* Animación de shake (temblor) */
+
+
+.shake:hover {
+    animation: shake 1s infinite; /* Se mantiene el temblor al pasar el mouse */
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 0); }
+    25% { transform: translate(-1px, 0); }
+    50% { transform: translate(1px, 0); }
+    75% { transform: translate(-1px, 0); }
+    100% { transform: translate(0, 0); }
+}
+
+/* Animación de swing (balanceo) */
+
+
+.swing:hover {
+    animation: swing 0.5s infinite; /* Se mantiene el balanceo al pasar el mouse */
+}
+
+@keyframes swing {
+    20% { transform: rotate(15deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(5deg); }
+    80% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Animación de tada (sorpresa) */
+
+
+.tada:hover{
+    animation: tada 2s infinite; /* Se mantiene la sorpresa al pasar el mouse */
+}
+
+@keyframes tada {
+    0% { transform: scale(1); }
+    10% { transform: scale(1.1); }
+    20% { transform: scale(1); }
+    30% { transform: scale(1.1); }
+    40% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+
+/* Animación de pulse (latido) */
+
+
+.pulse:hover {
+    animation: pulse 1s infinite; /* Se mantiene el latido al pasar el mouse */
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.card{background-color: white;}
