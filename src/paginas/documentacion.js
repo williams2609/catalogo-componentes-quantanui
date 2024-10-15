@@ -16,11 +16,11 @@ function documentacion() {
         <h2>Instalación</h2>
         <p>Para instalar la librería, ejecuta el siguiente comando en tu terminal:</p>
         <CopyButton>
-          {`npm i moduluxe`}
+          {`npm i quantanui`}
         </CopyButton>
         <p>O si prefieres usar Yarn:</p>
         <CopyButton>
-          {`yarn add moduluxe`}
+          {`yarn add quantanui`}
         </CopyButton>
       </section>
 
