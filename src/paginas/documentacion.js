@@ -1,7 +1,6 @@
 import React from 'react'
 import '../estilos/documentacion.css'
 
-import BarraNavegacion from '../componentes/BarraNavegacion'
 import CopyButton from '../componentes/CopyButton'
 
 function documentacion() {
