@@ -1,5 +1,4 @@
 import React from 'react'
-import CopyButton from '../componentes/CopyButton'
 import './estilosClases/bg-gradient.css'
 function BackgroundGd() {
   return (

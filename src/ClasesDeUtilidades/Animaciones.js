@@ -1,6 +1,5 @@
 import React from 'react'
 import './estilosClases/bg-gradient.css'
-import CopyButton from '../componentes/CopyButton'
 import './estilosClases/bg-gradient.css'
 function Animaciones() {
   return (
