@@ -46,7 +46,7 @@ function BreadCrums() {
           <div className="table-cell"><strong>.breadcrumb-item</strong></div>
           <div className="table-cell">Clase para cada elemento de breadcrumb.</div>
           <div className="table-cell">
-            <code>{`<li className="breadcrumb-item"><a href="#">Elemento</a></li>`}</code>
+            <code>{`<li className="breadcrumb-item"><a >Elemento</a></li>`}</code>
           </div>
           <div className="table-cell">
             <nav aria-label="breadcrumb">
@@ -83,8 +83,8 @@ function BreadcrumbsExample() {
 return (
   <nav aria-label="breadcrumb">
     <ol className="breadcrumb">
-      <li className="breadcrumb-item"><a href="#">Inicio</a></li>
-      <li className="breadcrumb-item"><a href="#">Biblioteca</a></li>
+      <li className="breadcrumb-item"><a >Inicio</a></li>
+      <li className="breadcrumb-item"><a >Biblioteca</a></li>
       <li className="breadcrumb-item active" aria-current="page">Datos</li>
     </ol>
   </nav>

@@ -63,10 +63,10 @@ function Carousel() {
             <div className="table-cell"><strong>.carousel-control-prev</strong></div>
             <div className="table-cell">Clase para el botón de navegación anterior.</div>
             <div className="table-cell">
-              <code>{`<a class="carousel-control-prev" href="#carousel" role="button">Prev</a>`}</code>
+              <code>{`<a class="carousel-control-prev" href="/carousel" role="button">Prev</a>`}</code>
             </div>
             <div className="table-cell">
-              <a className="carousel-control-prev" href="#carousel" role="button" style={{ display: 'block' }}>
+              <a className="carousel-control-prev" href="/carousel" role="button" style={{ display: 'block' }}>
                 Anterior
               </a>
             </div>
@@ -76,10 +76,10 @@ function Carousel() {
             <div className="table-cell"><strong>.carousel-control-next</strong></div>
             <div className="table-cell">Clase para el botón de navegación siguiente.</div>
             <div className="table-cell">
-              <code>{`<a class="carousel-control-next" href="#carousel" role="button">Next</a>`}</code>
+              <code>{`<a class="carousel-control-next" href="/carousel" role="button">Next</a>`}</code>
             </div>
             <div className="table-cell">
-              <a className="carousel-control-next" href="#carousel" role="button" style={{ display: 'block' }}>
+              <a className="carousel-control-next" href="/carousel" role="button" style={{ display: 'block' }}>
                 Siguiente
               </a>
             </div>

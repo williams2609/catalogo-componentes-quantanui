@@ -75,7 +75,7 @@ function Dropdown() {
           <div className="table-cell"><strong>.dropdown-item</strong></div>
           <div className="table-cell">Elementos dentro del menú desplegable.</div>
           <div className="table-cell">
-            <code>{`<a class="dropdown-item" href="#">Opción</a>`}</code>
+            <code>{`<a class="dropdown-item" >Opción</a>`}</code>
           </div>
           <div className="table-cell">
             <a className="dropdown-item" >Opción 1</a>
@@ -90,9 +90,9 @@ function Dropdown() {
   Opciones
 </button>
 <div class="dropdown-menu">
-  <a class="dropdown-item" href="#">Opción 1</a>
-  <a class="dropdown-item" href="#">Opción 2</a>
-  <a class="dropdown-item" href="#">Opción 3</a>
+  <a class="dropdown-item" >Opción 1</a>
+  <a class="dropdown-item" >Opción 2</a>
+  <a class="dropdown-item" >Opción 3</a>
 </div>
 </div>`}
       </CopyButton>
