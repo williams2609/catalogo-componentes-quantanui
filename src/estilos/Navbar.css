@@ -24,9 +24,6 @@ color: rgb(248, 248, 248);}
 .contenedor-nav ul{
     width: 100%;
 }
-.contenedor-nav li{
-    width: 50px;
-}
 .contenedor-nav .navbar-nav{
     position: relative;
     top: 4px;
@@ -37,8 +34,17 @@ color: rgb(248, 248, 248);}
 }
 .contenedor-nav .nav-item{
     margin: 0;
-    width:20%;
+    
 }
 @media(max-width: 400px){
     .contenedor-nav .nav-item{display: none;}
+}
+.contenedor-version.nav-item{
+    height: 10px;
+}
+@media(max-width: 850px){
+    .version{
+        display: none;
+        visibility: hidden;
+    }
 }

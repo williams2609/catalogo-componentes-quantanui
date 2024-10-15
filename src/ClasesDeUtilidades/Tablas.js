@@ -1,12 +1,12 @@
 import React from 'react'
-import { CustomNav, ListGroup, Table } from 'quantanui';
+
 import CopyButton from '../componentes/CopyButton';
 
 function Tablas() {
   return (
     <div className='doc'>
     <section className="doc-header">
-      <h2>Uso de Componentes de Listas y Tablas</h2>
+      <h1>Uso de Componentes de Listas y Tablas</h1>
       <p>A continuación, se muestra varios componentes de listas y tablas en tu aplicación:</p>
 
       <h3>Ejemplo de Lista</h3>

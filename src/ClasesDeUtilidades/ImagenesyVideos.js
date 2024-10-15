@@ -112,7 +112,8 @@ function MediaExample() {
       <h2>Videos</h2>
       <div className="embed-responsive embed-responsive-16by9" style={{ height: '200px' }}>
         <iframe 
-          className="embed-responsive-item" 
+          classNam
+          e="embed-responsive-item" 
           src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
           allowFullScreen 
           title="Video de ejemplo"

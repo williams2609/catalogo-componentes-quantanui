@@ -1,6 +1,8 @@
 import { NavDropdown, NavLink } from 'quantanui'
 import React, { useState } from 'react'
 import '../estilos/sidebar.css'
+
+
 function SideBar() {
     const [isOpen,setIsOpen]= useState(false);
 
@@ -8,14 +10,21 @@ const handleButton =()=>{
  setIsOpen(!isOpen)   
 }
 
+const [isDropdownOpen, setIsDropdownOpen] = useState(true); // Inicialmente abierto
+
+const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+};
   return (
     <div>
 
-        <div className={`boton-sidebar ${!isOpen && 'open'}`}onClick={handleButton}><i className={`bi ${isOpen ? "bi-x-lg closed":"bi-list"}`} style={{cursor:"pointer"}}></i></div>
+        <div className={`boton-sidebar ${!isOpen && 'open bg-transparent'}`}>
+            <i className={`bi ${isOpen ? "bi-x-lg closed":"bi-list"}`} style={{cursor:"pointer"}} onClick={handleButton}></i>
+            </div>
 
         <aside className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
-            <NavDropdown title="Documentacion">
-            <NavLink href="/doc/documentacion/how-to-use" >Como usar </NavLink>
+        <NavDropdown title="Documentacion" isOpen={isDropdownOpen} toggleDropdown={toggleDropdown}>
+            <NavLink href="/doc/documentacion/how-to-use">Como usar </NavLink>
                 <NavLink href="/doc/documentacion/why-use" >Porqué Moduluxe?</NavLink>
                 <NavLink href="/doc/documentacion/personalizacion" >Personalización</NavLink>
            </NavDropdown>
@@ -25,7 +34,7 @@ const handleButton =()=>{
             <NavDropdown title="Colaboración">
                 <NavLink href="/doc/colaboracion/colaborar">Como Colaborar</NavLink>
             </NavDropdown>
-            <NavDropdown title="Clases">
+            <NavDropdown title="Clases" mb-4>
                 <NavLink href="/doc/clases/backgroundGd">Background-Gradient</NavLink>
                 <NavLink href="/doc/clases/bgColor">Background-Color</NavLink>
                 <NavLink href="/doc/clases/flexBox">FlexBox</NavLink>
@@ -52,7 +61,7 @@ const handleButton =()=>{
                 <NavLink href="/doc/clases/notificaciones">Notificaciones</NavLink>
                 <NavLink href="/doc/clases/temas-fondo">Temas de Fondo</NavLink>
                 <NavLink href="/doc/clases/Dropdown">Dropdown</NavLink>
-                <NavLink href="/doc/clases/Dropdown">Dropdown</NavLink>
+                
               
             </NavDropdown>
         </aside>

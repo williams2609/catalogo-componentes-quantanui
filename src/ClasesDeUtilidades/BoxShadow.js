@@ -1,5 +1,5 @@
 import React from 'react'
-import CopyButton from '../componentes/CopyButton'
+
 
 function BoxShadow() {
   return (

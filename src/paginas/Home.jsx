@@ -15,8 +15,8 @@ function Home() {
     <p>Explora nuestros componentes reutilizables y mejora tu desarrollo.</p>
     <div className="button-container">
       
-      <button className="explore-button btn btn-primary pts" onClick={handleDocumentationClick} >Documentación</button>
-      <button className="view-components-button btn btn-primary"onClick={()=>navigate('/doc/componentes/navbar')}>Componentes</button>
+      <button className="explore-button btn pts" onClick={handleDocumentationClick} >Documentación</button>
+      <button className="view-components-button btn"onClick={()=>navigate('/doc/componentes/navbar')}>Componentes</button>
     
     </div>
   </header>

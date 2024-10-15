@@ -3,12 +3,74 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-   background-image: url('https://images.unsplash.com/photo-1579547944064-0180251f94c8?q=80&w=1278&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://plus.unsplash.com/premium_photo-1701517617983-817872cdb362?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: 400% 400%;
     animation: gradient 5s ease forwards; /* Animación suave del fondo */
     overflow: scroll; /* Evita desbordamiento */
     text-align: center;
+h1{
+    color: black;
 }
+strong{
+    color: black;
+}
+body.light-mode{
+  background-image: url('https://plus.unsplash.com/premium_photo-1701517617983-817872cdb362?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+}
+.theme-toggle-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .theme-toggle-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para el modo nocturno */
+  body.dark-mode {
+    background-image: url('https://images.unsplash.com/photo-1579547944064-0180251f94c8?q=80&w=1278&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    color: white;
+  }body.dark-mode p{
+    color: rgb(196, 196, 196);
+  }body.dark-mode h2{
+    color: rgb(76, 198, 202);
+  }body.dark-mode h3{
+    color: rgb(76, 198, 202);
+  }body.darkdark-mode strong{
+    color: white;
+  }
+  body.darkdark-mode .btn{
+    background-color: aliceblue;
+    background-image: url("https://images.unsplash.com/photo-1614852206732-6728910dc175?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    color: white;
+  }
+  body.darkdark-mode .sidebar .dropdown-menu{
+    
+    background-color: #0000005b;
+  }
+  body.dark-mode .sidebar .dropdown-toggle{
+    color: rgb(76, 198, 202);
+  }
+  body.dark-mode .navbar {
+    color: white;
+  }body.dark-mode h1{
+    color: rgb(255, 255, 255);
+  }
+  
+  body.dark-mode .theme-toggle-btn {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  body.dark-mode .theme-toggle-btn:hover {
+    background-color: #ddd;
+  }
 
 /* Añadir un efecto de brillo suave */
 body::before {
@@ -37,14 +99,11 @@ h1{
     margin-top: 60px;
     color: white;
 }
-p{
-    margin-top: 30px;
-    color: white;
-}
+
 h2{
-    color: white;
     font-family: sans;
-    margin-top: 30px;}
+  }
+  h3{font-family: sans;}
 footer{
     margin-top: 50px;
 }
