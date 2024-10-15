@@ -27,7 +27,11 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "jsx-a11y/anchor-is-valid": "warn",
+      "no-unused-vars": "warn"
+    }
   },
   "browserslist": {
     "production": [
@@ -42,6 +46,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "eslint-plugin-jsx-a11y": "^6.10.0"
   }
 }
